@@ -31,11 +31,9 @@
         </div>
       </div>
     </div>
-
+    <!-- Add section for Featured Mars Image -->
     <div class="row" id="mars-featured-img">
       <div class="col-md-8">
-        <!-- <div class="media">
-          <div class="media-body"> -->
         <h2>Featured Image</h2>
         <img src="{{mars.featured_image_url | default('static/images/error.png', true) }}"
           class="img-responsive" alt="Responsive image" />
@@ -44,18 +42,10 @@
         <div class="row" id="mars-facts">
           <h2>Facts Table</h2>
           {{ mars.facts_html | safe }}
-
         </div>
-        <!-- <div class="media">
-                <div class="media-body"> -->
-
       </div>
-      <!-- <h4 class="media-heading">{{ mars.latest_news_title }}</h4>
-            <p>{{ mars.latest_news_paragraph }}</p> -->
-      <!-- </div>
-        </div> -->
     </div>
-
+    <!-- Add section for Mars Hemisphere Images -->
     <div class="row" id="mars-hemispheres">
       <div class="col-md-12">
         <!-- <div class="media">
@@ -76,38 +66,8 @@
         </div>
         {% endfor %}
     </div>
-
-
-      <!-- <h4 class="media-heading">{{ mars.latest_news_title }}</h4>
-            <p>{{ mars.latest_news_paragraph }}</p> -->
-      <!-- </div>
-        </div> -->
     </div>
-
-
   </div>
-  <!-- <div class="container">
-    <div class="jumbotron">
-      <center><strong><h1 class="display-4">Mission to Mars</h1></strong>
-      <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></center>
-    </div>
-    <div class="row">
-      <div class="col-md-12"><strong><p style="font-size:30px">Latest Mars News</p></strong></div>
-      <h4 class="media-heading">{{mars.latest_news_title}}</h4>
-      <br>
-      <br>  
-      <div class="col-md-6"><strong><p style="font-size:30px">Featured Mars Image</p></strong></div>
-        
-      <div class="col-md-6"><strong><p style="font-size:15px">Mars Facts</p></strong></div>
-      <br>
-      <br>
-      <div class="col-md-12"><center><strong><p style="font-size:30px">Mars Hemispheres</p></strong></center></div>
-      <br>
-      <div class="col-md-6"><iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/ninapadgett/cl4rpsuo5000114p3l2byrq9b.html?title=false&access_token=pk.eyJ1IjoibmluYXBhZGdldHQiLCJhIjoiY2w0b3ZsZmowMGJnbjNjcGdvMnBxMW00eiJ9.ywTOjj15Abrn_vGs95h1MQ&zoomwheel=false#5.73/39.606/-89.109" title="Streets" style="border:none;"></iframe></div>
-    </div>
-  </div> -->
-
-  <!-- ## I think I need 4 containers instead of 4 rows. -->
 </body>
 
 </html>
